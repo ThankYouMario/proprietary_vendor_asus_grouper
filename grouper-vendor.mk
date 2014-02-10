@@ -21,7 +21,6 @@ $(call inherit-product-if-exists, vendor/asus/grouper/invensense/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/grouper/nvidia/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/grouper/nxp/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/grouper/widevine/$(LOCAL_STEM))
-$(call inherit-produce-if-exists, vendor/asus/grouper/others/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/gropuer/nvidia/keymaster/keymaster.mk)
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner
