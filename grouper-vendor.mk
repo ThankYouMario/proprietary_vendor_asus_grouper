@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := device-partial.mk
+LOCAL_STEM := grouper/device-partial.mk
 
 $(call inherit-product-if-exists, vendor/asus/grouper/asus/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/grouper/broadcom/$(LOCAL_STEM))
@@ -21,6 +21,7 @@ $(call inherit-product-if-exists, vendor/asus/grouper/invensense/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/grouper/nvidia/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/grouper/nxp/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/asus/grouper/widevine/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/asus/gropuer/nvidia/keymaster/keymaster.mk)
+$(call inherit-product-if-exists, vendor/asus/grouper/nvidia/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/asus/gropuer/nvidia/grouper/keymaster/keymaster.mk)
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner
